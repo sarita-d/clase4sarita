@@ -58,7 +58,7 @@ function resta(){
     return (x-y);
 }
 function multi(){
-    return (x*y);
+    return (x*y)
 }
 function divi(){
     if(y==0)
