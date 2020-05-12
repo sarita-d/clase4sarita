@@ -1,9 +1,9 @@
 var x, y, op;
 var res = document.getElementById("result");
 function calcular(){
-    var n1 = parseInt(document.getElementById("n1").value);
-    var n2 = parseInt(document.getElementById("n2").value);
-    var op = document.getElementById("oper").value;
+    x = parseInt(document.getElementById("n1").value);
+    y = parseInt(document.getElementById("n2").value);
+    op = document.getElementById("oper").value;
     switch(op){
         case '1':res.value = suma(); break;
         case '2':res.value = resta(); break;
@@ -62,7 +62,7 @@ function multi(){
 }
 function divi(){
     if(y==0)
-    return "No se puede restar";
+    return "No se puede dividir entre cero"
     return (x/y);
 }
 /*
